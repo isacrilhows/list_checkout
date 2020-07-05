@@ -39,25 +39,30 @@ class App extends Component {
               <legend>Adicionar Produto</legend>
               <Formulario evtAdicionar={this.adicionar}/>
             </fieldset>
-            <table border="1" cellSpacing="0">
-              <thead>
-                <tr>
-                  <th>Nome</th>
-                  <th>Preço</th>
-                  <th>Quantidade</th>
-                  <th>Subtotal</th>
-                  <th>Ação</th>
-                </tr>
-              </thead>
-              <tbody>
-                {
-                  this.state.lista.map((prod,idx) => {
-                    return <Produto evtDeletar={this.remover} key={idx} indice={idx} produto={prod}/>
-                  })
-                }
-              </tbody>
-            </table>
-              <div>Total: {this.state.total}</div>
+            <fieldset class="segundo-fieldset">
+              <legend>Carrinho</legend>
+                <table cellpadding="0" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Nome</th>
+                      <th>Preço</th>
+                      <th>Quantidade</th>
+                      <th>Subtotal</th>
+                      <th>Ação</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {
+                      this.state.lista.map((prod,idx) => {
+                        return <Produto evtDeletar={this.remover} key={idx} indice={idx} produto={prod}/>
+                      })
+                    }
+                  </tbody>
+                </table>
+              </fieldset>
+              <div class="complemento"></div>
+              <div class="container-total"><span>Total: R$ {this.state.total}</span></div>
+              
           </div>
         );
     }
