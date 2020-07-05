@@ -1,38 +1,146 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Inicio da estilização */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(71, 6, 184, 0.28);
+}
+
+.complemento {
+    background-color: #61198B;
+    height: 160px;
+    width: 100%;
+}
+
+.sobreposicao {
+    padding-top: 105px;
+    width: 100%;
+}
+
+h2 {
+    font-family: 'Poppins';
+    font-size: 60px;
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    border-radius: 41px;
+    line-height: 110px;
+}
+
+@media (max-width: 740px) {
+    h2 {
+        font-size: 38px;
+    }
+}
+
+fieldset {
+    border: 1px solid blue;
+    background-color: white;
+    border-radius: 26px;
+    border: none;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.16);
+    width: 80%;
+    margin: 140px auto;
+}
+
+fieldset legend {
+    text-align: center;
+    font-size: 25px;
+    width: 65%;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 41px;
+    height: auto;
+    line-height: 60px;
+    vertical-align: middle;
+}
+
+.modulo-produtos {
+    height: 350px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    justify-items: center;
+}
+
+.modulo-produtos input[type="text"] {
+    border: 1px solid #707070;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 16px;
+    width: 53%;
+    height: 80px;
+}
+
+.container-adicionar {
+    width: 100%;
+    text-align: center;
+}
+
+.modulo-produtos input[type="button"] {
+    border: none;
+    font-size: 20px;
+    width: 50%;
+    background-color: rgba(97, 25, 139, 1);
+    box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.16);
+    border-radius: 41px;
+    line-height: 40px;
+    margin-top: 40px;
+    color: white;
+}
+
+.categoria {
+    border: 1px solid #707070;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 16px;
+    text-align: center;
+    display: inline-block;
+    margin: 10px 2%;
+    width: 40%;
+    line-height: 80px;
+    vertical-align: middle;
 }

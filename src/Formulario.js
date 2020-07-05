@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './App.css';
 
 class Produto extends Component {
     constructor(props) {
@@ -52,11 +53,11 @@ class Produto extends Component {
 
     render(){
         return(
-            <div>
-                Nome: <input ref={this.nome} type="text" value={this.props.nome} onChange={this.atualiza}/><br/>
-                Preço: <input ref={this.preco} type="text" value={this.props.preco} onChange={this.atualiza}/><br/>
-                Quantidade: <input ref={this.quantidade} type="text" value={this.props.quantidade} onChange={this.atualiza}/><br/>
-                <input type="button" value="Adicionar" onClick={this.adicionar}/>
+            <div class="modulo-produtos">
+                <span class="categoria">Nome: </span><input ref={this.nome} type="text" value={this.props.nome} onChange={this.atualiza}/><br/>
+                <span class="categoria">Preço: </span><input ref={this.preco} type="text" value={this.props.preco} onChange={this.atualiza}/><br/>
+                <span class="categoria">Quantidade: </span><input ref={this.quantidade} type="text" value={this.props.quantidade} onChange={this.atualiza}/><br/>
+                <div class="container-adicionar"><input type="button" value="Adicionar" onClick={this.adicionar}/></div>
             </div>
         );
     }

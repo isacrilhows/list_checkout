@@ -32,7 +32,9 @@ class App extends Component {
     render() {
         return (
           <div>
-            <h2>Lista de Compras</h2>
+            <div class="complemento">
+              <div class="sobreposicao"><h2>Lista de Compras</h2></div>
+            </div>
             <fieldset>
               <legend>Adicionar Produto</legend>
               <Formulario evtAdicionar={this.adicionar}/>
@@ -44,7 +46,7 @@ class App extends Component {
                   <th>Preço</th>
                   <th>Quantidade</th>
                   <th>Subtotal</th>
-                  <th></th>
+                  <th>Ação</th>
                 </tr>
               </thead>
               <tbody>
